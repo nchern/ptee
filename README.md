@@ -16,4 +16,5 @@ $ cat file | ptee pbcopy
 ```
 
 ### Vim integrations
-Can be used as a convinient util to write `vim` command filters. With its help you can send selected files to an external command without modifying a text in the current buffer. 
+
+Can be used as a convinient util to write `vim` command filters. With its help you can send selected lines to an external command without modifying a text in the current buffer. 
