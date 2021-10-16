@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"os"
@@ -8,8 +9,15 @@ import (
 )
 
 func init() {
-	if len(os.Args) < 2 {
+	flag.Usage = func() {
+		fmt.Println("Starts a process(the 1st argument specifies the command to run),")
+		fmt.Println("connects stdin to this process' stdin and mirrors it to stdout as well.")
+		fmt.Println()
 		fmt.Printf("Usage: %s [command] [args...]\n", os.Args[0])
+	}
+	flag.Parse()
+	if len(os.Args) < 2 {
+		flag.Usage()
 		os.Exit(2)
 	}
 }
