@@ -4,7 +4,7 @@ Pronounced `/piːtiː/`. Process `tee`.
 
 This utility starts a process(1st argument specifies the command to run), copies stdin to this process' stdin AND to stdout as well.
 
-## Usa cases
+## Use cases
 
 
 ### Shell
@@ -17,4 +17,4 @@ $ cat file | ptee pbcopy
 
 ### Vim integrations
 
-Can be used as a convinient util to write `vim` command filters. With its help you can send selected lines to an external command without modifying a text in the current buffer. 
+Can be used as a convenient util to write `vim` command filters. With its help you can send selected lines to an external command without modifying a text in the current buffer. 
